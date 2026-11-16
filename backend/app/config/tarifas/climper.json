@@ -1,0 +1,15 @@
+{
+  "clientId": "08de0a6d-cb23-4f8e-8554-5be914a91f37",
+  "cliente": "CLIMPER EIRL",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Tomografías",
+      "modalidades": ["CT"],
+      "limite": 150,
+      "valor_mensual": 318.00,
+      "precio_unitario": 2.12
+    }
+  },
+  "cuenta_cancelados": false
+}

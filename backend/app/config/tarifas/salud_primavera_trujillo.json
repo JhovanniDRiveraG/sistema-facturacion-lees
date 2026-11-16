@@ -1,0 +1,22 @@
+{
+  "clientId": "",
+  "cliente": "SALUD PRIMAVERA TRUJILLO",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Rayos X",
+      "modalidades": ["RX", "CR", "DX"],
+      "limite": 1000,
+      "valor_mensual": 750.00,
+      "precio_unitario": 0.75
+    },
+    "B": {
+      "descripcion": "Resonancia",
+      "modalidades": ["MG", "MR"],
+      "limite": 400,
+      "valor_mensual": 1000.00,
+      "precio_unitario": 2.50
+    }
+  }, 
+  "cuenta_cancelados": false
+}

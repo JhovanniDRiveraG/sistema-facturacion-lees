@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+}
+
+.app {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ============ HEADER ============ */
+.header {
+  background: #7FB2FF;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* ============ FILTROS ============ */
+.filtros {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.filtro-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.filtro-grupo label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+}
+
+.filtro-grupo input,
+.filtro-grupo select {
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+  background: white;
+}
+
+.filtro-grupo input:focus,
+.filtro-grupo select:focus {
+  outline: none;
+  border-color: #7FB2FF;
+}
+
+.filtro-botones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filtro-botones button {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  background: #7FB2FF;
+}
+
+.filtro-botones button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(127, 178, 255, 0.4);
+}
+
+.filtro-botones button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.filtro-botones .btn-exportar {
+  background: #27ae60;
+}
+
+.filtro-botones .btn-exportar:hover:not(:disabled) {
+  box-shadow: 0 4px 12px rgba(39, 174, 96, 0.4);
+}
+
+/* ============ ERROR ============ */
+.error {
+  background: #fee;
+  color: #c0392b;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #c0392b;
+  margin-bottom: 20px;
+}
+
+/* ============ RESUMEN ============ */
+.resumen {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.resumen h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+}
+
+.tarjeta {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tarjeta .numero {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.tarjeta .label {
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-top: 5px;
+}
+
+.tarjeta.firmado { border-color: #27ae60; background: #eafaf1; }
+.tarjeta.firmado .numero { color: #27ae60; }
+.tarjeta.no-firmado { border-color: #e74c3c; background: #fdedec; }
+.tarjeta.no-firmado .numero { color: #e74c3c; }
+.tarjeta.mismo-mes { border-color: #3498db; background: #ebf5fb; }
+.tarjeta.mismo-mes .numero { color: #3498db; }
+.tarjeta.otro-mes { border-color: #f39c12; background: #fef9e7; }
+.tarjeta.otro-mes .numero { color: #f39c12; }
+
+/* ============ TABLA ============ */
+.tabla-container {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.tabla-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+}
+
+.tabla-scroll {
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 1200px;
+}
+
+.tabla thead {
+  position: sticky;
+  top: 0;
+  background: #7FB2FF;
+  color: white;
+  z-index: 10;
+}
+
+.tabla th {
+  padding: 12px 10px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.tabla td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+.tabla tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.tabla tbody tr:nth-child(even) {
+  background: #fafbfc;
+}
+
+.tabla tbody tr:nth-child(even):hover {
+  background: #f0f2f5;
+}
+
+/* ============ BADGES ============ */
+.badge-estado {
+  background: #e9ecef;
+  color: #495057;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-si {
+  background: #d4edda;
+  color: #155724;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.badge-no {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* ============ SIN DATOS ============ */
+.sin-datos {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ============ TOTAL DEL CLIENTE ============ */
+.total-cliente {
+  background: #7FB2FF;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.total-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.periodo-total {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 15px;
+}
+
+.total-monto {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.btn-documento {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.btn-documento:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-correo {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 2px solid #667eea;
+}
+
+.btn-correo:hover {
+  background-color: #e9ecef;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tabla {
+    font-size: 12px;
+  }
+
+  .tabla th,
+  .tabla td {
+    padding: 8px 6px;
+  }
+
+  .total-cliente {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .total-monto {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjetas {
+    grid-template-columns: 1fr;
+  }
+}

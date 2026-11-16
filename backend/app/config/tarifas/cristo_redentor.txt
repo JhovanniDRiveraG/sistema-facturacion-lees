@@ -1,0 +1,31 @@
+
+{
+  "clientId": "08dc8176-3253-4a75-828a-9962c1ab6cef",
+  "cliente": "CLINICA CRISTO REDENTOR TRUJILLO",
+  "tipo_cobro": "por_rango",
+  "tablas": {
+    "A": {
+      "descripcion": "Radiografías, Densitometrías y Ecografías",
+      "modalidades": ["RX", "DX", "US", "CR", "MG"],
+      "rangos": [
+        { "nombre": "A1", "min": 0, "max": 400, "valor": 340.00, "unitario": 0.85 },
+        { "nombre": "A2", "min": 401, "max": 500, "valor": 415.00, "unitario": 0.83 },
+        { "nombre": "A3", "min": 501, "max": 600, "valor": 492.00, "unitario": 0.82 },
+        { "nombre": "A4", "min": 601, "max": 800, "valor": 632.00, "unitario": 0.79 }
+      ]
+    },
+    "B": {
+      "descripcion": "Tomografías",
+      "modalidades": ["CT"],
+      "rangos": [
+        { "nombre": "B1", "min": 0, "max": 300, "valor": 590.00, "unitario": 2.19 },
+        { "nombre": "B2", "min": 301, "max": 400, "valor": 590.00, "unitario": 2.15 },
+        { "nombre": "B3", "min": 401, "max": 500, "valor": 848.00, "unitario": 2.12 },
+        { "nombre": "B4", "min": 501, "max": 600, "valor": 1035.00, "unitario": 2.07 }
+      ]
+    }
+  },
+  "estados_contados": ["STATUS.NEW", "STATUS.APPROVED", "STATUS.CONFIRMED", "STATUS.IN_PROGRESS", "STATUS.CANCELED", "STATUS.PENDING", "STATUS.RECONVOKED", "STATUS.RECTIFICATION", "STATUS.REVIEW", "STATUS.UNCATEGORIZED"],
+  "solo_firmados": false,
+  "cuenta_cancelados": true
+}

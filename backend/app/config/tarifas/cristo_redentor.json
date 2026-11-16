@@ -1,0 +1,16 @@
+{
+  "cliente": "CLINICA CRISTO REDENTOR TRUJILLO",
+  "clientId": "08de0a6d-cb23-4f8e-8554-5be914a91f37",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Tomografía",
+      "modalidades": ["CT"],
+      "limite": 300,
+      "valor_mensual": 590.00,
+      "precio_unitario": 2.12
+    }
+  },
+  "cuenta_cancelados": true
+}
+

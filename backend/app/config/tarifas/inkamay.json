@@ -1,0 +1,30 @@
+{
+  "cliente": "INKAMAY RONTGEN",
+  "clientId": "08de9bc3-b7aa-41d7-8ac5-26af69ca22cc",
+  "tipo_cobro": "personalizado",
+  "grupos": {
+    "A": {
+      "descripcion": "Mamografía",
+      "modalidades": ["MG"],
+      "limite_especial": 15,
+      "monto_especial": 29.25,
+      "rangos": [
+        { "nombre": "Rango 1", "min": 16, "max": 40, "unitario": 1.95 },
+        { "nombre": "Rango 2", "min": 41, "max": 60, "unitario": 1.90 },
+        { "nombre": "Rango 3", "min": 61, "max": 99999, "unitario": 1.85 }
+      ]
+    },
+    "B": {
+      "descripcion": "Tomografía",
+      "modalidades": ["CT"],
+      "limite_especial": 150,
+      "monto_especial": 318.00,
+      "rangos": [
+        { "nombre": "Rango 1", "min": 151, "max": 400, "unitario": 2.12 },
+        { "nombre": "Rango 2", "min": 401, "max": 500, "unitario": 2.07 },
+        { "nombre": "Rango 3", "min": 501, "max": 99999, "unitario": 1.96 }
+      ]
+    }
+  },
+  "cuenta_cancelados": false
+}

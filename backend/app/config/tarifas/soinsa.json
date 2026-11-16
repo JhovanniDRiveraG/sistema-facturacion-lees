@@ -1,0 +1,13 @@
+{
+  "clientId": "08da081c-41af-4bba-8bdf-635d84378454",
+  "cliente": "SOLUCIONES INTEGRALES DE SALUD S.A.C.",
+  "tipo_cobro": "por_productividad",
+  "grupos": {
+    "A": {
+      "descripcion": "Tomografía",
+      "modalidades": ["CT"],
+      "precio_unitario": 1.99
+    }
+  },
+  "cuenta_cancelados": true
+}

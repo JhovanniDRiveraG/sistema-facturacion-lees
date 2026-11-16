@@ -1,0 +1,15 @@
+{
+  "cliente": "Policlinico Miraflores RX",
+  "clientId": "08de7ddd-f8d0-4d41-8077-80649a3af7a0",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Rayos X",
+      "modalidades": ["RX", "CR", "DX"],
+      "limite": 200,
+      "valor_mensual": 178.00,
+      "precio_unitario": 0.89
+    }
+  },
+  "cuenta_cancelados": false
+}

@@ -1,0 +1,22 @@
+{
+  "clientId": "",
+  "cliente": "Salud Primavera Chimbote",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Rayos X",
+      "modalidades": ["RX", "CR", "DX"],
+      "limite": 700,
+      "valor_mensual": 525.00,
+      "precio_unitario": 0.75
+    },
+    "B": {
+      "descripcion": "Tomografía",
+      "modalidades": ["CT"],
+      "limite": 180,
+      "valor_mensual": 399.60,
+      "precio_unitario": 2.22
+    }
+  },
+  "cuenta_cancelados": false
+}

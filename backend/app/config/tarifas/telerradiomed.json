@@ -1,0 +1,18 @@
+{
+  "cliente": "Telerradiomed",
+  "clientId": "08db105a-2d66-42fd-873a-2914e26f330b",
+  "tipo_cobro": "por_productividad",
+  "grupos": {
+    "A": {
+      "descripcion": "Resonancia Magnética",
+      "modalidades": ["MR"],
+      "precio_unitario": 2.00
+    },
+    "B": {
+      "descripcion": "Tomografía Computarizada",
+      "modalidades": ["CT"],
+      "precio_unitario": 1.60
+    }
+  },
+  "cuenta_cancelados": false
+}

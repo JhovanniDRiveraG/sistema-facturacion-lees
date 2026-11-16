@@ -1,0 +1,22 @@
+{
+  "clientId": "08da47c3-72de-41ac-8ca1-fea6a8253573",
+  "cliente": "C. TRUJILLO CHOTA",
+  "tipo_cobro": "por_umbral",
+  "grupos": {
+    "A": {
+      "descripcion": "Radiografías y Electrocardiogramas",
+      "modalidades": ["DX", "CR", "ECG"],
+      "limite": 220,
+      "valor_mensual": 220.00,
+      "precio_unitario": 1.00
+    },
+    "B": {
+      "descripcion": "Tomografías",
+      "modalidades": ["CT"],
+      "limite": 90,
+      "valor_mensual": 180.00,
+      "precio_unitario": 2.00
+    }
+  },
+  "cuenta_cancelados": false
+}
